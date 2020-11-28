@@ -48,9 +48,7 @@ xkb_symbols "editing" {
 }
 ```
 
-## Windows
-
-## Connect Sennheiser PXC 550-II to Mint 20
+### Connect Sennheiser PXC 550-II to Mint 20
 create /etc/bluetooth/audio.conf
 ```
 [General]
@@ -72,4 +70,10 @@ pacmd list-cards
 
 # pacmd set-card-profile <card index> <profile name> 
 pacmd set-card-profile 3 a2dp_sink
+```
+
+### Setup Spotify 
+install `kdocker` to minimize Spotify. Set kdocker as startup program with the following command
+```
+kdocker -q -i /usr/share/spotify/icons/spotify-linux-24.png spotify %U
 ```
