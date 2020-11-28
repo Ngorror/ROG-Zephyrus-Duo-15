@@ -50,3 +50,26 @@ xkb_symbols "editing" {
 
 ## Windows
 
+## Connect Sennheiser PXC 550-II to Mint 20
+create /etc/bluetooth/audio.conf
+```
+[General]
+Enable=Source,Sink,Media,Socket
+```
+install the following apps
+```
+apt install pulseaudio pulseaudio-module-bluetooth pavucontrol blueman bluez 
+```
+
+do not forget to [v] Trust this device in blueman
+
+in case of problems to conect to the device after pairing you can run `bluetoothctl` and investigate the device
+
+to enable `a2dp_sink`
+
+```
+pacmd list-cards
+
+# pacmd set-card-profile <card index> <profile name> 
+pacmd set-card-profile 3 a2dp_sink
+```
