@@ -77,3 +77,14 @@ install `kdocker` to minimize Spotify. Set kdocker as startup program with the f
 ```
 kdocker -q -i /usr/share/spotify/icons/spotify-linux-24.png spotify %U
 ```
+
+### Wireless doesn't start on Mint boot
+If you have dual boot system, and you go through a cycle of 
+- Windows Boot
+- Windows Shutdown
+- Linux Boot
+- No wireless card in Mint
+
+then you need to disable Windows Fast Start in `Control Panel => Power Options => Fast Startup`
+
+It is good idea also to disable Secure Boot in your UEFI Bios too,
