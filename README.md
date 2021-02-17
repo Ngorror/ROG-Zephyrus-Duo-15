@@ -88,3 +88,15 @@ If you have dual boot system, and you go through a cycle of
 then you need to disable Windows Fast Start in `Control Panel => Power Options => Fast Startup`
 
 It is good idea also to disable Secure Boot in your UEFI Bios too,
+
+### Configure battery threshold
+It's not specific to this laptop but [here is the source](https://www.reddit.com/r/linuxhardware/comments/g8kpee/psa_kernel_54_added_the_ability_to_set_a_battery/) and how I configured mine to load charge only to 60% - you have the same functionality in windows - in MyAssus desktop program.
+```
+$ cat /sys/class/power_supply/BAT0/status
+Charging
+$ cat /sys/class/power_supply/BAT0/capacity
+74
+$ echo 60 | sudo tee /sys/class/power_supply/BAT0/charge_control_end_threshold
+$ cat /sys/class/power_supply/BAT0/status
+Not charging
+```
