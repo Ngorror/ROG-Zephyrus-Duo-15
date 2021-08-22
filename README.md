@@ -1,5 +1,5 @@
 # ROG-Zephyrus-Duo-15
-All configuration hacks to transform Asus ROG Zephyrus Duo 15 GW550LWS into working developer machine
+All configuration hacks to transform Asus ROG Zephyrus Duo 15 `GW550LWS` into working developer machine
 
 ## Ubuntu/Mint
 
@@ -7,6 +7,10 @@ All configuration hacks to transform Asus ROG Zephyrus Duo 15 GW550LWS into work
 There is no mechanical direct keys for Home and End.
 I mapped my PtrSc and right Ctrl keys to be Home and End.
 Please note with this change you will lose also Sys_Req as a key.
+To get the key code - you can run in your console
+```
+xev
+```
 
 Modify the following lines in your `/usr/share/X11/xkb/symbols/pc` file 
 
