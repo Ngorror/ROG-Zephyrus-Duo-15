@@ -12,7 +12,7 @@ To get the key code - you can run in your console
 xev
 ```
 
-Modify the following lines in your `/usr/share/X11/xkb/symbols/pc` file 
+Modify the following lines in your [/usr/share/X11/xkb/symbols/pc](https://github.com/Ngorror/ROG-Zephyrus-Duo-15/blob/main/pc) file 
 
 ```
 xkb_symbols "pc105" {
@@ -51,6 +51,9 @@ xkb_symbols "editing" {
   ...
 }
 ```
+
+Please note I changed not only the Asus **[Right Control]** and **[PtrSc]** keys but also my Corsair K70 RGB TKL **[Right Windows]** key.
+Now it is also mapped as **[Home]** button
 
 ### Connect Sennheiser PXC 550-II to Mint 20
 create /etc/bluetooth/audio.conf
