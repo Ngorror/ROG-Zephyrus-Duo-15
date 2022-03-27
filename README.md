@@ -122,3 +122,38 @@ xrandr --output DP-0 --scale 0.5x0.5
 ```
 
 Note: keep your 2nd screen resolution to the native one 3840 x 1100
+
+### Display brightness
+I didn't manage to run any of the internet solutions to control my screens brightnes.
+Now I'm using the following commands
+
+for the 2nd display (strangely enough my Mint decided to initialize it first)
+```
+xrandr --output DP-0 --brightness 0.5
+```
+
+and the main screeen
+```
+xrandr --output DP-2 --brightness 0.5
+```
+
+If you have external monitors and you want to control them - get their names with
+```
+xrandr
+```
+
+here is an example of my setup now
+```
+ngoro@duo:~$ xrandr
+Screen 0: minimum 8 x 8, current 1920 x 1630, maximum 32767 x 32767
+DP-0 connected 1920x550+0+1080 (normal left inverted right x axis y axis) 344mm x 99mm
+   3840x1100     60.02*+  48.02  
+   1920x550      60.06    48.08  
+DP-1 disconnected (normal left inverted right x axis y axis)
+HDMI-0 disconnected (normal left inverted right x axis y axis)
+DP-2 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 344mm x 193mm
+   1920x1080     60.04*+ 300.18  
+DP-3 disconnected (normal left inverted right x axis y axis)
+DP-4 disconnected (normal left inverted right x axis y axis)
+
+```
