@@ -107,3 +107,18 @@ $ echo 60 | sudo tee /sys/class/power_supply/BAT0/charge_control_end_threshold
 $ cat /sys/class/power_supply/BAT0/status
 Not charging
 ```
+### Second screen zoom problems
+This is applicable only for version with Full HD (1920x1080 300Hz) primary screen
+
+When I set the Display resolution of the 2nd screen to 1920x550 then it displays twice two small copies of my 2nd screen vertically instead of working properly.
+
+Versions of Mint before 20.3 and nvidia drivers before 470 - it was easy to just upscale the 2nd screen with Fraction scaling to 200%
+With Mint 20.3 and nvidia drivers 470 ir newer (I've just installed 510) you can see only 153% in Fraction scaling dropdown
+
+You can use the following command to adjust the 2nd screen image by just upscaling the output
+
+```
+xrandr --output DP-0 --scale 0.5x0.5
+```
+
+Note: keep your 2nd screen resolution to the native one 3840 x 1100
