@@ -68,7 +68,7 @@ xkb_symbols "editing" {
 	type= "PC_ALT_LEVEL2",
 	symbols[Group1]= [ Home, Print ]
     };
-    key <RWIN> {  [  Home                 ]       };
+    key <RWIN> {        [  Home                 ]       };
     key <RCTL> {	[  End			]	};
     key <SCLK> {	[  Scroll_Lock		]	};
     key <PAUS> {
