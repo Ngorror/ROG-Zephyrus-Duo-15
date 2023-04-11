@@ -80,7 +80,12 @@ pacmd set-card-profile 3 a2dp_sink
 ```
 
 ### Setup Spotify 
-install `kdocker` to minimize Spotify. Set kdocker as startup program with the following command
+install `kdocker` to minimize Spotify. 
+```
+apt install kdocker
+```
+
+Set kdocker as startup program with the following command
 ```
 kdocker -q -i /usr/share/spotify/icons/spotify-linux-24.png spotify %U
 ```
