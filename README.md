@@ -113,9 +113,9 @@ $ cat /sys/class/power_supply/BAT0/status
 Not charging
 ```
 You want to execute this command on every start but it must be executed as root
-so add to the root crontab the following row
+so add to the root crontab the following row (`crontab -e`)
 ```
-echo 60 | sudo tee /sys/class/power_supply/BAT0/charge_control_end_threshold
+@reboot echo 60 | sudo tee /sys/class/power_supply/BAT0/charge_control_end_threshold
 ```
 
 ### Second screen zoom problems
