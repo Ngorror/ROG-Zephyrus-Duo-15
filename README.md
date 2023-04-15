@@ -112,6 +112,12 @@ $ echo 60 | sudo tee /sys/class/power_supply/BAT0/charge_control_end_threshold
 $ cat /sys/class/power_supply/BAT0/status
 Not charging
 ```
+You want to execute this command on every start but it must be executed as root
+so add to the root crontab the following row
+```
+echo 60 | sudo tee /sys/class/power_supply/BAT0/charge_control_end_threshold
+```
+
 ### Second screen zoom problems
 This is applicable only for version with Full HD (1920x1080 300Hz) primary screen
 
