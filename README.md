@@ -175,3 +175,15 @@ in Preferences >> Keyboard >> Shortcut >> Custom Shortcut add
 xdotool key --clearmodifiers XF86AudioPlay
 ```
 [source](https://askubuntu.com/questions/1156148/add-new-play-pause-shortcut-key-not-spotify)
+
+### Dual boot clock problem
+Set Linux Real Time Clock to Local time
+```
+sudo timedatectl set-local rtc 1
+```
+OR Set Windows Real Time Clock to UTC
+```
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+Q-WORD: RealTimeisUniversal = 1
+```
+
