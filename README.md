@@ -186,4 +186,11 @@ OR Set Windows Real Time Clock to UTC
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation
 Q-WORD: RealTimeisUniversal = 1
 ```
+### Dark theme in Libre Office to show the buttons
+[source](https://forums.linuxmint.com/viewtopic.php?t=389231) 
+```
+Tools > Options > Libreoffice > Applications Colors > Color scheme > Libreoffice dark" scheme
+Tools > Options > Libreoffice > Personalization > Libreoffice Themes > Default Look, do not use Themes
+Tools > Options > Libreoffice > View > Icon Style > Breeze (dark)
+```
 
