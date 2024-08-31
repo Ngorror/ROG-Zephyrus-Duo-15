@@ -170,6 +170,11 @@ DP-4 disconnected (normal left inverted right x axis y axis)
 ```
 
 ### Keyboard shortcut to Toggle Play/Pause in the current media player
+First install `xdotool`
+```shell
+sudo apt install xdotool
+```
+
 in Preferences >> Keyboard >> Shortcut >> Custom Shortcut add
 ```
 xdotool key --clearmodifiers XF86AudioPlay
